@@ -1,0 +1,9 @@
+{
+  "name": "bcparks-bot",
+  "version": "1.0.0",
+  "description": "Local daemon for BC Parks booking",
+  "main": "bcparks-bot.js",
+  "dependencies": {
+    "playwright": "1.60.0"
+  }
+}

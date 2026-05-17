@@ -1,0 +1,15 @@
+services:
+  bcparks-daemon:
+    build: .
+    container_name: bcparks_bot
+    restart: always
+    env_file:
+      - .env
+    # ADD THESE LINES BELOW:
+    volumes:
+      - ./screenshots:/usr/src/app/screenshots
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
